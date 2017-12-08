@@ -1,12 +1,39 @@
 {
   "pages":[
     "pages/index/index",
-    "pages/logs/logs"
+    "pages/logs/logs",
+    "pages/wish/wish",
+    "pages/surprise/surprise",
+    "pages/gift/gift"
   ],
   "window":{
     "backgroundTextStyle":"light",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "WeChat",
-    "navigationBarTextStyle":"black"
+    "navigationBarTextStyle":"black",
+    "backgroundColor": "#ffffff",
+    "enablePullDownRefresh": true
+  },
+  "tabBar": {
+    "color": "#666",
+    "selectedColor": "#3cc51f",
+    "backgroundColor": "#eee",
+    "borderStyle": "white",
+    "list": [{
+      "pagePath": "pages/wish/wish",
+      "text": "圣诞许愿",
+      "iconPath": "images/wish.png",
+      "selectedIconPath": "images/wish_active.png"  
+    }, {
+      "pagePath": "pages/surprise/surprise",
+      "text": "惊喜盒子",
+      "iconPath": "images/surprise.png",
+      "selectedIconPath": "images/surprise_active.png"
+    },{
+      "pagePath": "pages/gift/gift",
+      "text": "礼物购买",
+      "iconPath": "images/gift.png",
+      "selectedIconPath": "images/gift_active.png"
+    }]
   }
 }

@@ -15,11 +15,6 @@ Page({
       url: '../logs/logs'
     })
   },
-  gotoLottery: function() {
-    wx.switchTab({
-      url: '../surprise/surprise'
-    })
-  },
   onLoad: function () {
     if (app.globalData.userInfo) {
       this.setData({
