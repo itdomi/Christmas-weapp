@@ -85,12 +85,12 @@ Page({
     app.awardsConfig = {
       chance: true,
       awards:[
-        {'index': 0, 'name': '1元红包'},
-        {'index': 1, 'name': '5元话费'},
-        {'index': 2, 'name': '6元红包'},
-        {'index': 3, 'name': '8元红包'},
-        {'index': 4, 'name': '10元话费'},
-        {'index': 5, 'name': '10元红包'}
+        {'index': 0, 'name': '一只玩偶', 'img': './../../images/gift_active.png'},
+        {'index': 1, 'name': '一只玩偶', 'img': './../../images/gift_active.png'},
+        {'index': 2, 'name': '一只玩偶', 'img': './../../images/gift_active.png'},
+        {'index': 3, 'name': '一只玩偶', 'img': './../../images/gift_active.png'},
+        {'index': 4, 'name': '一只玩偶', 'img': './../../images/gift_active.png'},
+        {'index': 5, 'name': '一只玩偶', 'img': './../../images/gift_active.png'}
       ]
     }
     
@@ -139,7 +139,7 @@ Page({
       ctx.restore();
 
       // 奖项列表
-      html.push({turn: i * turnNum + 'turn', award: awardsConfig[i].name});    
+      html.push({turn: i * turnNum + 'turn', award: awardsConfig[i].img});    
     }
     that.setData({
         awardsList: html
