@@ -6,8 +6,8 @@ Page({
     btnDisabled: ''
   },
   gotoList: function() {
-    wx.switchTab({
-      url: '../index/index'
+    wx.navigateTo({
+      url: '../list/list'
     })
   },
   getLottery: function () {
@@ -85,12 +85,12 @@ Page({
     app.awardsConfig = {
       chance: true,
       awards:[
-        {'index': 0, 'name': '一只玩偶', 'img': './../../images/gift_active.png'},
-        {'index': 1, 'name': '一只玩偶', 'img': './../../images/gift_active.png'},
-        {'index': 2, 'name': '一只玩偶', 'img': './../../images/gift_active.png'},
-        {'index': 3, 'name': '一只玩偶', 'img': './../../images/gift_active.png'},
-        {'index': 4, 'name': '一只玩偶', 'img': './../../images/gift_active.png'},
-        {'index': 5, 'name': '一只玩偶', 'img': './../../images/gift_active.png'}
+        {'index': 0, 'name': '一只玩偶', 'img': './../../images/surprise_active.png'},
+        {'index': 1, 'name': '一棵圣诞树', 'img': './../../images/surprise_active.png'},
+        {'index': 2, 'name': '一只火鸡', 'img': './../../images/surprise_active.png'},
+        {'index': 3, 'name': '一把糖果', 'img': './../../images/surprise_active.png'},
+        {'index': 4, 'name': '一朵雪花', 'img': './../../images/surprise_active.png'},
+        {'index': 5, 'name': '一顶圣诞帽', 'img': './../../images/surprise_active.png'}
       ]
     }
     
@@ -123,9 +123,9 @@ Page({
 
       // 颜色间隔
       if (i % 2 == 0) {
-          ctx.setFillStyle('#ffb820');
-      }else{
-          ctx.setFillStyle('#ffcb3f');
+          ctx.setFillStyle('#F69562');
+      }else {
+          ctx.setFillStyle('#FE8484');
       }
 
       // 填充扇形
