@@ -1,8 +1,10 @@
 var app = getApp()
 Page({
   data: {
-    awardsList: {},
+    image: '../../images/top_bg.png',
     animationData: {},
+    awardsList: {},
+    List: [],
     btnDisabled: ''
   },
   gotoList: function() {
@@ -16,8 +18,14 @@ Page({
 
     // 获取奖品配置
     var awardsConfig = app.awardsConfig
-    if (awardIndex < 2) awardsConfig.chance = false
-    console.log(awardIndex)
+    if (awardIndex < 2) 
+    awardsConfig.chance = false
+    // console.log(awardsConfig.awards[awardIndex].name)
+    that.data.List.push(awardsConfig.awards[awardIndex].name)
+    wx.setStorage({
+      key:"list",
+      data: that.data.List
+    })
 
     // 初始化 rotate
     var animationInit = wx.createAnimation({
@@ -57,6 +65,9 @@ Page({
       }
     }, 4100);
     
+ 
+ 
+     
 
     /*wx.request({
       url: '../../data/getLottery.json',
@@ -85,12 +96,12 @@ Page({
     app.awardsConfig = {
       chance: true,
       awards:[
-        {'index': 0, 'name': '一只玩偶', 'img': './../../images/surprise_active.png'},
-        {'index': 1, 'name': '一棵圣诞树', 'img': './../../images/surprise_active.png'},
-        {'index': 2, 'name': '一只火鸡', 'img': './../../images/surprise_active.png'},
-        {'index': 3, 'name': '一把糖果', 'img': './../../images/surprise_active.png'},
-        {'index': 4, 'name': '一朵雪花', 'img': './../../images/surprise_active.png'},
-        {'index': 5, 'name': '一顶圣诞帽', 'img': './../../images/surprise_active.png'}
+        {'index': 0, 'name': '一只玩偶', 'img': '../../images/surprise_active.png'},
+        {'index': 1, 'name': '一棵圣诞树', 'img': '../../images/surprise_active.png'},
+        {'index': 2, 'name': '一只火鸡', 'img': '../../images/surprise_active.png'},
+        {'index': 3, 'name': '一把糖果', 'img': '../../images/surprise_active.png'},
+        {'index': 4, 'name': '一朵雪花', 'img': '../../images/surprise_active.png'},
+        {'index': 5, 'name': '一顶圣诞帽', 'img': '../../images/surprise_active.png'}
       ]
     }
     
@@ -123,9 +134,9 @@ Page({
 
       // 颜色间隔
       if (i % 2 == 0) {
-          ctx.setFillStyle('#F69562');
+          ctx.setFillStyle('#9ED2EE');
       }else {
-          ctx.setFillStyle('#FE8484');
+          ctx.setFillStyle('#57AACA');
       }
 
       // 填充扇形
@@ -137,13 +148,12 @@ Page({
 
       // 恢复前一个状态
       ctx.restore();
-
-      // 奖项列表
-      html.push({turn: i * turnNum + 'turn', award: awardsConfig[i].img});    
-    }
-    that.setData({
-        awardsList: html
-      });
+       // 奖项列表
+       html.push({turn: i * turnNum + 'turn', award: awardsConfig[i].img});    
+      }
+      that.setData({
+          awardsList: html
+        });
 
     wx.drawCanvas({
       canvasId: 'lotteryCanvas',

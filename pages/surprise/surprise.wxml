@@ -1,6 +1,8 @@
 <view class="wrapper">
 
 	<view class="header">
+	<view class="top_bg"  style="background:url('{{image}}');background-size: cover;">
+  	</view>
 		<text class="header-title">惊喜盒子 </text>
 		<text class="header-subtitle">  Happy Christmas! 快来抽你的惊喜盒子~ </text> 
 	</view>

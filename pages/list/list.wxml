@@ -5,8 +5,8 @@
 	<view class="header-name">
 		{{userInfo.nickName}}，恭喜您获得了以下奖品：
 	</view>
-	<view class="list-container">
-		<view class="list-item">一顶圣诞帽</view>
+	<view class="list-container" wx:for="{{awardsList}}" wx:for-item="item">
+		<view class="list-item">{{item}}</view>
 		
 	</view>
 
