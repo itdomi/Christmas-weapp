@@ -11,7 +11,7 @@ page {
 
 .header-subtitle{
   color: #999;
-  margin-top: 5px;
+  margin-top: 7px;
 }
 
 .top_bg {
