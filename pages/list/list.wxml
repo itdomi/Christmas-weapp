@@ -3,8 +3,9 @@
 		<image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
 	</view>
 	<view class="header-name">
-		{{userInfo.nickName}}，恭喜您获得了以下奖品：
+		{{userInfo.nickName}}，恭喜您获得了以下惊喜盒子：
 	</view>
+	
 	<view class="list-container" wx:for="{{awardsList}}" wx:for-item="item">
 		<view class="list-item">{{item}}</view>
 		

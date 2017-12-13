@@ -3,7 +3,6 @@
 	<view class="header">
 	<view class="top_bg"  style="background:url('{{image}}');background-size: cover;">
   	</view>
-		<text class="header-title">惊喜盒子 </text>
 		<text class="header-subtitle">  Happy Christmas! 快来抽你的惊喜盒子~ </text> 
 	</view>
 
@@ -27,7 +26,7 @@
 
 		<view class="main-container">
 			<view class="main-container-btn">
-				<button bindtap="gotoList" type="primary">查看中奖</button>	
+				<button bindtap="gotoList" type="primary">看一看奖品吧~</button>	
 			</view>
 			<view class="main-container-rule">
 				<text class="main-rule-title">活动规则：</text>

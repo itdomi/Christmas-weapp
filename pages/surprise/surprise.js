@@ -55,7 +55,7 @@ Page({
     setTimeout(function() {
       wx.showModal({
         title: '恭喜',
-        content: '获得' + (awardsConfig.awards[awardIndex].name),
+        content: '获得' + (awardsConfig.awards[awardIndex].name) + '哦~',
         showCancel: false
       })
       if (awardsConfig.chance) {
