@@ -5,6 +5,7 @@
   
   <view class="cards">
   Happy Christmas!
+  <image src="{{tree_img}}" />
 	</view>
     <view class="card-btns">
     <button class="btn_wish" bindtap="gotoLottery">许个愿</button>

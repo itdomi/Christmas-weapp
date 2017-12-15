@@ -5,6 +5,7 @@ const app = getApp()
 Page({
   data: {
     bg_img: '../../images/wish.jpg',
+    tree_img: '../../images/wish_active.png',
     userInfo: {},
     hasUserInfo: false,
     canIUse: wx.canIUse('button.open-type.getUserInfo')

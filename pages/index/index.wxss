@@ -10,11 +10,14 @@
 
 .list-btn {
   position: absolute;
-  top: 27px;
+  top: 22px;
   color: pink;
   font-size: 20px;
 }
 
 .item-btn {
-  margin: 20px
+  margin: 20px;
+  width: 100px;
+  padding: 3px;
+  border-bottom: 1px solid gray;
 }
