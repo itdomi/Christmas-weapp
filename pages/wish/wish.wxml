@@ -1,0 +1,13 @@
+
+<view class="container" style="background:url('{{bg_img}}');background-size: cover;">
+
+  
+  
+  <view class="cards">
+  Happy Christmas!
+	</view>
+    <view class="card-btns">
+    <button class="btn_wish" bindtap="gotoLottery">许个愿</button>
+    <button class="btn_wish" bindtap="gotoGift">写贺卡</button>
+    </view>
+</view>
