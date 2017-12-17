@@ -4,11 +4,15 @@
   
   
   <view class="cards">
-  Happy Christmas!
+  <form bindsubmit="bindFormSubmit">
+  <textarea class="cards_text" placeholder="Happy Christmas!" maxlength="100" placeholder-style="color:red;" name="textarea" focus="{{focus}}" />
+  <button class="cards_submit" form-type="submit"> 写好啦~ </button>
+  </form>
+
   <image src="{{tree_img}}" />
 	</view>
     <view class="card-btns">
-    <button class="btn_wish" bindtap="gotoLottery">许个愿</button>
-    <button class="btn_wish" bindtap="gotoGift">写贺卡</button>
+    <button class="btn_wish" bindtap="bindButtonTap">许个愿</button>
+    <button class="btn_wish" bindtap="bindButtonTap">写贺卡</button>
     </view>
 </view>

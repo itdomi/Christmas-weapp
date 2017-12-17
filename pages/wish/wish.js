@@ -6,6 +6,7 @@ Page({
   data: {
     bg_img: '../../images/wish.jpg',
     tree_img: '../../images/wish_active.png',
+    focus: false,
     userInfo: {},
     hasUserInfo: false,
     canIUse: wx.canIUse('button.open-type.getUserInfo')
@@ -16,6 +17,25 @@ Page({
       url: '../logs/logs'
     })
   },
+  bindButtonTap: function() {
+    this.setData({
+      focus: true
+    })
+  },
+  bindTextAreaBlur: function(e) {
+    console.log(e.detail.value)
+  },
+  bindFormSubmit: function(e) {
+    console.log(e.detail.value.textarea)
+  },
   onLoad: function () {
+  },
+  onShareAppMessage: function (e) {
+   
+    return {
+        title: '圣诞快乐~',
+        desc: 'e.detail.value.textarea',
+        path: '/pages/wish/wish'
+    }
   }
 })
