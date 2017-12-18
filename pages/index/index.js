@@ -25,11 +25,7 @@ Page({
       url: '../wish/wish'
     })
   },
-  gotoGift: function() {
-    wx.switchTab({
-      url: '../gift/gift'
-    })
-  },
+ 
   onLoad: function () {
     
   }

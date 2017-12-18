@@ -6,6 +6,5 @@
   <view class="list-btn">
 		<view class="item-btn" bindtap="gotoWish">许个愿吧~</view>
     <view class="item-btn" bindtap="gotoLottery">惊喜盒子~</view>
-    <view class="item-btn" bindtap="gotoGift">买个礼物~</view>
 	</view>
 </view>
