@@ -1,7 +1,7 @@
 var app = getApp()
 Page({
   data: {
-    image: '../../images/top_bg.png',
+    image: 'http://ozlrrk52c.bkt.clouddn.com/wx/top_bg.png',
     animationData: {},
     awardsList: {},
     List: [],
@@ -96,12 +96,12 @@ Page({
     app.awardsConfig = {
       chance: true,
       awards:[
-        {'index': 0, 'name': '一只玩偶', 'img': '../../images/surprise_active.png'},
-        {'index': 1, 'name': '一棵圣诞树', 'img': '../../images/surprise_active.png'},
-        {'index': 2, 'name': '一只火鸡', 'img': '../../images/surprise_active.png'},
-        {'index': 3, 'name': '一把糖果', 'img': '../../images/surprise_active.png'},
-        {'index': 4, 'name': '一朵雪花', 'img': '../../images/surprise_active.png'},
-        {'index': 5, 'name': '一顶圣诞帽', 'img': '../../images/surprise_active.png'}
+        {'index': 0, 'name': '一只玩偶', 'img': 'http://ozlrrk52c.bkt.clouddn.com/wx/surprise_active.png'},
+        {'index': 1, 'name': '一棵圣诞树', 'img': 'http://ozlrrk52c.bkt.clouddn.com/wx/surprise_active.png'},
+        {'index': 2, 'name': '一只火鸡', 'img': 'http://ozlrrk52c.bkt.clouddn.com/wx/surprise_active.png'},
+        {'index': 3, 'name': '一把糖果', 'img': 'http://ozlrrk52c.bkt.clouddn.com/wx/surprise_active.png'},
+        {'index': 4, 'name': '一朵雪花', 'img': 'http://ozlrrk52c.bkt.clouddn.com/wx/surprise_active.png'},
+        {'index': 5, 'name': '一顶圣诞帽', 'img': 'http://ozlrrk52c.bkt.clouddn.com/wx/surprise_active.png'}
       ]
     }
     

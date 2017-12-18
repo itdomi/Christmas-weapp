@@ -4,7 +4,7 @@ const app = getApp()
 
 Page({
   data: {
-    bg_img: '../../images/wish.jpg',
+    bg_img: 'http://ozlrrk52c.bkt.clouddn.com/wx/wish.jpg',
     tree_img: '../../images/wish_active.png',
     focus: false,
     userInfo: {},

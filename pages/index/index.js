@@ -4,7 +4,7 @@ const app = getApp()
 
 Page({
   data: {
-    bg_img: '../../images/bg.jpg',
+    bg_img: 'http://ozlrrk52c.bkt.clouddn.com/wx/bg.jpg',
     userInfo: {},
     hasUserInfo: false,
     canIUse: wx.canIUse('button.open-type.getUserInfo')

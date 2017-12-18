@@ -4,7 +4,6 @@
     "pages/logs/logs",
     "pages/wish/wish",
     "pages/surprise/surprise",
-    "pages/gift/gift",
     "pages/list/list"
   ],
   "window":{
@@ -30,11 +29,6 @@
       "text": "惊喜盒子",
       "iconPath": "images/surprise.png",
       "selectedIconPath": "images/surprise_active.png"
-    },{
-      "pagePath": "pages/gift/gift",
-      "text": "礼物购买",
-      "iconPath": "images/gift.png",
-      "selectedIconPath": "images/gift_active.png"
     }]
   }
 }
