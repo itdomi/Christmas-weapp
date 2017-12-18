@@ -72,12 +72,13 @@ page {
   font-weight: bold;
   text-shadow: 0 1px 1px rgba(255,255,255,.6);
 }
-.canvas-item-text{
+.canvas-item-img{
   position: relative;
   display: block;
   padding-top: 20px;
   /* width: 50px; */
   margin: 0 auto;
+  z-index: 1000;
   text-align: center; 
   -webkit-transform-origin: 50% 150px; 
   transform-origin: 50% 150px;
@@ -87,7 +88,7 @@ page {
   position: absolute;
   left: 110px;
   top: 110px;
-  z-index: 3;
+  z-index: 1000;
   width: 80px;
   height: 80px;
   border-radius: 50%;

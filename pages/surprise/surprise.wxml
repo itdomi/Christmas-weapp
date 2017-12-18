@@ -13,7 +13,7 @@
 
 				<view class="canvas-list" wx:for="{{awardsList}}" wx:key="unique">
 					<view class="canvas-item">
-				  		<image src="{{item.award}}" class="canvas-item-text" style="-webkit-transform: rotate({{item.turn}});transform: rotate({{item.turn}});width:40px;height:40px"></image>
+				  		<image src="{{item.award}}" class="canvas-item-img" style="-webkit-transform: rotate({{item.turn}});transform: rotate({{item.turn}});width:40px;height:40px"></image>
 					    
 					</view>
 				</view>
