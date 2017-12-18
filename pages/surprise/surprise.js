@@ -96,12 +96,12 @@ Page({
     app.awardsConfig = {
       chance: true,
       awards:[
-        {'index': 0, 'name': '一只玩偶', 'img': 'http://ozlrrk52c.bkt.clouddn.com/wx/surprise_active.png'},
-        {'index': 1, 'name': '一棵圣诞树', 'img': 'http://ozlrrk52c.bkt.clouddn.com/wx/surprise_active.png'},
-        {'index': 2, 'name': '一只火鸡', 'img': 'http://ozlrrk52c.bkt.clouddn.com/wx/surprise_active.png'},
-        {'index': 3, 'name': '一把糖果', 'img': 'http://ozlrrk52c.bkt.clouddn.com/wx/surprise_active.png'},
-        {'index': 4, 'name': '一朵雪花', 'img': 'http://ozlrrk52c.bkt.clouddn.com/wx/surprise_active.png'},
-        {'index': 5, 'name': '一顶圣诞帽', 'img': 'http://ozlrrk52c.bkt.clouddn.com/wx/surprise_active.png'}
+        {'index': 0, 'name': '一只玩偶', 'img': '../../images/surprise_active.png'},
+        {'index': 1, 'name': '一棵圣诞树', 'img': '../../images/surprise_active.png'},
+        {'index': 2, 'name': '一只火鸡', 'img': '../../images/surprise_active.png'},
+        {'index': 3, 'name': '一把糖果', 'img': '../../images/surprise_active.png'},
+        {'index': 4, 'name': '一朵雪花', 'img': '../../images/surprise_active.png'},
+        {'index': 5, 'name': '一顶圣诞帽', 'img': '../../images/surprise_active.png'}
       ]
     }
     
@@ -132,15 +132,7 @@ Page({
       // 绘制圆弧
       ctx.arc(0, 0, 150, 0,  2 * Math.PI / len, false);
 
-      // 颜色间隔
-      if (i % 2 == 0) {
-          ctx.setFillStyle('#9ED2EE');
-      }else {
-          ctx.setFillStyle('#57AACA');
-      }
-
-      // 填充扇形
-      ctx.fill();
+      
       // 绘制边框
       ctx.setLineWidth(0.5);
       ctx.setStrokeStyle('#e4370e');
