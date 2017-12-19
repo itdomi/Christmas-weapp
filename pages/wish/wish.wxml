@@ -14,5 +14,6 @@
     <view class="card-btns">
     <button class="btn_wish" bindtap="bindButtonTap">许个愿</button>
     <button class="btn_wish" bindtap="bindButtonTap">写贺卡</button>
+    <button bindtap="gotoList" type="primary">我的惊喜盒子~</button>	
     </view>
 </view>

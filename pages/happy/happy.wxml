@@ -1,0 +1,9 @@
+
+<view class="container" style="background:url('{{bg_img}}');background-size: cover;">
+
+  
+  
+  <view class="cards"> {{cards_share}}
+  <image src="{{tree_img}}" />
+	</view>
+</view>

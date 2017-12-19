@@ -21,6 +21,8 @@ Page({
   },
   bindButtonTap: function() {
     this.setData({
+      cards_text_share: '',
+      cards_share: '',
       focus: true
     })
   },
@@ -33,6 +35,20 @@ Page({
       cards_text_share: 'cards_text_share',
       cards_share: e.detail.value.textarea
 
+    });
+    wx.showModal({
+      title: '已保存',
+      content: '点击右上角可把愿望或贺卡发给你的好友哦~',
+      showCancel: false
+    });
+    wx.setStorage({
+      key:"happy",
+      data: e.detail.value.textarea
+    })
+  },
+  gotoList: function() {
+    wx.navigateTo({
+      url: '../happy/happy'
     })
   },
   onLoad: function () {
@@ -41,7 +57,7 @@ Page({
     return {
         title: '圣诞快乐~',
         desc: '',
-        path: '/pages/wish/wish'
+        path: '/pages/happy/happy'
     }
   }
 })
