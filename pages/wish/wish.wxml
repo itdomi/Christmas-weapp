@@ -3,9 +3,9 @@
 
   
   
-  <view class="cards">
+  <view class="cards"> {{cards_share}}
   <form bindsubmit="bindFormSubmit">
-  <textarea class="cards_text" placeholder="Happy Christmas!" maxlength="100" placeholder-style="color:red;" name="textarea" focus="{{focus}}" />
+  <textarea class="cards_text {{cards_text_share}}" placeholder="Happy Christmas!" maxlength="100" placeholder-style="color:red;" name="textarea" focus="{{focus}}" />
   <button class="cards_submit" form-type="submit"> 写好啦~ </button>
   </form>
 

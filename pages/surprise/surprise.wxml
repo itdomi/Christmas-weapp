@@ -24,7 +24,7 @@
 			<view bindtap="getLottery" class="canvas-btn {{btnDisabled}}">抽奖</view>		
 		</view>
 		<view class="award-btn">
-			<button bindtap="gotoList" type="primary">看一看奖品吧~</button>	
+			<button bindtap="gotoList" type="primary">我的惊喜盒子~</button>	
 		</view>
 		<view class="main-container">
 			

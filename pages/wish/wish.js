@@ -6,6 +6,8 @@ Page({
   data: {
     bg_img: 'http://ozlrrk52c.bkt.clouddn.com/wx/wish.jpg',
     tree_img: '../../images/wish_active.png',
+    cards_text_share: '',
+    cards_share: '',
     focus: false,
     userInfo: {},
     hasUserInfo: false,
@@ -26,15 +28,19 @@ Page({
     console.log(e.detail.value)
   },
   bindFormSubmit: function(e) {
-    console.log(e.detail.value.textarea)
+    console.log(e.detail.value.textarea);
+    this.setData({
+      cards_text_share: 'cards_text_share',
+      cards_share: e.detail.value.textarea
+
+    })
   },
   onLoad: function () {
   },
   onShareAppMessage: function (e) {
-   
     return {
         title: '圣诞快乐~',
-        desc: 'e.detail.value.textarea',
+        desc: '',
         path: '/pages/wish/wish'
     }
   }

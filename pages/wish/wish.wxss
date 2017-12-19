@@ -23,6 +23,9 @@
     height: 165px;
     
   }
+  .cards_text_share {
+    display: none;
+  }
   .cards_submit {
     width:160px;
     height: 24px;
