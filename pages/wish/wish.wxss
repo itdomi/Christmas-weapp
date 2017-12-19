@@ -12,6 +12,7 @@
     width: 220px;
     height: 220px;
     margin: 0 auto;
+    padding: 10px;
     background-color: #fefefe;
     color: red;
     border-radius: 20px;
