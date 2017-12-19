@@ -46,11 +46,7 @@ Page({
       data: e.detail.value.textarea
     })
   },
-  gotoList: function() {
-    wx.navigateTo({
-      url: '../happy/happy'
-    })
-  },
+ 
   onLoad: function () {
   },
   onShareAppMessage: function (e) {

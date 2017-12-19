@@ -21,9 +21,9 @@
   .cards_mask {
     position: absolute;
     width: 240px;
-    height: 180px;
+    height: 120px;
     margin: 0 auto;
-    padding: 10px;
+    padding-top: 80px;
     border-radius: 20px;
     background-color: red;
     z-index: 100;
@@ -31,14 +31,14 @@
     font-size: 22px;
     border: 10px;
     text-align: center;
-    line-height: 180px;
   }
   .cards_header {
     font-size: 16px;
     color: gray;
     position: absolute;
-    left: 0;
-    top: 0;
+    height: 25px;
+    left: 7px;
+    top: 5px;
   }
   .cards>image {
       width: 50px;

@@ -4,8 +4,7 @@
     "pages/logs/logs",
     "pages/wish/wish",
     "pages/surprise/surprise",
-    "pages/list/list",
-    "pages/happy/happy"
+    "pages/list/list"
   ],
   "window":{
     "backgroundTextStyle":"light",
