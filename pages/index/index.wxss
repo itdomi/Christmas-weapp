@@ -16,7 +16,7 @@
 }
 
 .item-btn {
-  margin: 20px;
+  margin: 30px auto;
   width: 100px;
   padding: 3px;
   border-bottom: 1px solid gray;
