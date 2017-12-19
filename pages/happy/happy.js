@@ -6,8 +6,8 @@ Page({
   data: {
     bg_img: 'http://ozlrrk52c.bkt.clouddn.com/wx/wish.jpg',
     tree_img: '../../images/wish_active.png',
-    cards_text_share: '',
-    cards_share: '',
+    undisplay1: 'undisplay1',
+    undisplay2: '',
     focus: false,
     userInfo: {},
     hasUserInfo: false,
@@ -19,7 +19,12 @@ Page({
       url: '../logs/logs'
     })
   },
-  
+  gotoCards: function() {
+    this.setData({
+      undisplay1: '',
+      undisplay2: 'undisplay2',
+    })
+  },
   onLoad: function () {
       var that = this;
     wx.getStorage({
