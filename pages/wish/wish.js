@@ -52,7 +52,7 @@ Page({
     return {
         title: '圣诞快乐~',
         desc: '',
-        imageUrl: 'http://ozlrrk52c.bkt.clouddn.com/wx/top_bg.png',
+        imageUrl: 'http://ozlrrk52c.bkt.clouddn.com/wx/1.jpg',
         path: '/pages/happy/happy'
     }
   }

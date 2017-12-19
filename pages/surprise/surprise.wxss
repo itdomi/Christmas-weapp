@@ -47,7 +47,7 @@ page {
   height: inherit;
   border-radius: inherit;
   background-clip: padding-box;
-  background-color: #84CDF6;
+  background: -webkit-radial-gradient(circle, rgb(121, 201, 238), rgb(250, 179, 179),#84CDF6 ); 
 }
 .canvas-element{
   width: inherit;

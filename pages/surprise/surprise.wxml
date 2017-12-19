@@ -9,7 +9,7 @@
 	<view class="main">
 		<view class="canvas-container">
 			<view  animation="{{animationData}}" class="canvas-content" >
-				<canvas style="width: 300px; height: 300px;" class="canvas-element" canvas-id="lotteryCanvas"></canvas>
+				
 
 				<view class="canvas-list" wx:for="{{awardsList}}" wx:key="unique">
 					<view class="canvas-item">
