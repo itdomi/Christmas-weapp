@@ -46,13 +46,13 @@ Page({
       data: e.detail.value.textarea
     })
   },
- 
   onLoad: function () {
   },
   onShareAppMessage: function (e) {
     return {
         title: '圣诞快乐~',
         desc: '',
+        imageUrl: 'http://ozlrrk52c.bkt.clouddn.com/wx/top_bg.png',
         path: '/pages/happy/happy'
     }
   }
